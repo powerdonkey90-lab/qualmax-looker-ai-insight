@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  font-family: Arial, "Noto Sans KR", sans-serif;
+  color: #222;
+}
+
+.insight-card {
+  width: 100%;
+  min-height: 100vh;
+  padding: 22px 24px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 18px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  position: relative;
+  overflow: hidden;
+}
+
+.corner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 46px solid #d50000;
+  border-left: 46px solid transparent;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 800;
+  color: #d50000;
+  letter-spacing: -0.3px;
+}
+
+.header p {
+  margin: 4px 0 0;
+  font-size: 11px;
+  color: #777;
+}
+
+.status {
+  margin-right: 38px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #00a651;
+}
+
+.score-box {
+  text-align: center;
+  padding: 12px 0 18px;
+}
+
+.score {
+  font-size: 58px;
+  line-height: 1;
+  font-weight: 800;
+  color: #d50000;
+}
+
+.score-label {
+  margin-top: 6px;
+  font-size: 11px;
+  color: #888;
+  letter-spacing: 1px;
+}
+
+.grade {
+  display: inline-block;
+  margin-top: 9px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: #f5f5f5;
+  color: #d50000;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.section {
+  margin-top: 18px;
+}
+
+.section h2 {
+  margin: 0 0 9px;
+  font-size: 12px;
+  color: #d50000;
+  letter-spacing: 0.5px;
+}
+
+.section ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.section li {
+  margin-bottom: 8px;
+  padding-left: 18px;
+  position: relative;
+  font-size: 12px;
+  line-height: 1.45;
+  color: #333;
+}
+
+.section li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #d50000;
+  font-weight: 800;
+}
+
+.footer {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #eeeeee;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 10px;
+  color: #777;
+}
+
+.footer strong {
+  color: #d50000;
+  white-space: nowrap;
+}
